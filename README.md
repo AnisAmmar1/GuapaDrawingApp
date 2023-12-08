@@ -17,4 +17,13 @@
 + Node.js was chosen for the backend due to its non-blocking, event-driven architecture, which is well-suited for applications with real-time features like drawing.
 + Express.js simplifies the creation of robust APIs, providing a minimal and flexible framework.
 
+# Data Storage: MongoDB
+# Choice: MongoDB
+
+** Reasons : **
+
++ MongoDB is a popular NoSQL database that provides flexibility in handling unstructured or semi-structured data, making it suitable for storing drawings or image data.
++ Its scalability and ability to handle large amounts of data would be beneficial in a production environment where the application may have a substantial user base.
++ MongoDB's JSON-like documents could be used to store drawing data, making it easy to map between the application's data model and the database.
+
 
