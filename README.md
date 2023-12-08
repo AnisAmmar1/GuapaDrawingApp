@@ -10,7 +10,7 @@
 + A large and active community around React ensures good support and a plethora of third-party libraries.
 
 # Backend: Node.js and Express.js
-# Choice: Node.js and Express.js
+## Choice: Node.js and Express.js
 
 ** Reason: **
 
