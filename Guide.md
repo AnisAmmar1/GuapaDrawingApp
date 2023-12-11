@@ -30,7 +30,7 @@ This will start the backend server, and it will be accessible at http://localhos
 
    # Note 
    + Open the server.js file in the Back folder.
-   + Navigate to line 38 where the image saving logic is implemented.
+   + Navigate to line 41 where the image saving logic is implemented.
    + Adjust the imagePath variable to specify the folder path where you want to save the images on your device. The current example path is set to C:\\Users\\A N I S\\Desktop , and you should customize it according to your own folder structure.
      # Usage
   + Open your web browser and go to http://localhost:3000 to use the My Drawing App.
