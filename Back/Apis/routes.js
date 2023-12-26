@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require ('fs');
 const Drawing = require('../Model/drawingModel');
-
+const router = express.Router();
 
 app.post('/save-drawing', async (req, res) => {
     const { dataURL } = req.body;
@@ -31,3 +31,4 @@ app.get('/get-drawings', async (req, res) => {
         res.status(500).json({ message: 'Internal Server Error' });
     }
 });
+module.exports = router;
