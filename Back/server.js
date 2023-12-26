@@ -5,8 +5,9 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const dotenv = require('dotenv');
-
+const routes = require('./Apis/routes');
 const app = express();
+
 const PORT = process.env.PORT || 5000;
 dotenv.config();
 
@@ -27,7 +28,7 @@ mongoose
   .catch((err) => console.log(err));
 
 
-
+app.use(routes);
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
