@@ -4,7 +4,7 @@ const fs = require ('fs');
 const Drawing = require('../Model/drawingModel');
 const router = express.Router();
 
-app.post('/save-drawing', async (req, res) => {
+router.post('/save-drawing', async (req, res) => {
     const { dataURL } = req.body;
 
     try {
@@ -22,7 +22,7 @@ app.post('/save-drawing', async (req, res) => {
     }
 });
 
-app.get('/get-drawings', async (req, res) => {
+router.get('/get-drawings', async (req, res) => {
     try {
         const drawings = await Drawing.find();
         res.json(drawings);
