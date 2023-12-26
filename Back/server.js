@@ -23,11 +23,7 @@ mongoose
     console.log("DB Connected");
   })
   .catch((err) => console.log(err));
-const drawingSchema = new mongoose.Schema({
-    dataURL: String,
-});
 
-const Drawing = mongoose.model('Drawing', drawingSchema);
 
 app.post('/save-drawing', async (req, res) => {
     const { dataURL } = req.body;
