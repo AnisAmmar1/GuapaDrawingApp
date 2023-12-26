@@ -1,4 +1,4 @@
-# GuapaDrawingApp
+# AnisGuapaDrawingApp
 
 # Frontend Framework: React.js
 ## Choice: React.js
