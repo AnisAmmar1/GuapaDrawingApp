@@ -4,6 +4,7 @@ const cors = require('cors');
 const path = require('path');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const dotenv = require('dotenv');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -15,7 +16,7 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/DrawingApp", {
+  .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
